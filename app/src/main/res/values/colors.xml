@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="purple_200">#FFBB86FC</color>
+  <color name="purple_500">#FF6200EE</color>
+  <color name="purple_700">#FF3700B3</color>
+  <color name="teal_200">#FF03DAC5</color>
+  <color name="teal_700">#FF018786</color>
+  <color name="black">#FF000000</color>
+  <color name="white">#FFFFFFFF</color>
+
+
+  <color name="neutral_10">#FFFFFF</color>
+  <color name="neutral_20">#F9F9F9</color>
+  <color name="neutral_30">#F1F1F1</color>
+  <color name="neutral_40">#E8E8E8</color>
+  <color name="neutral_50">#D8D8D8</color>
+  <color name="neutral_60">#999999</color>
+  <color name="neutral_70">#666666</color>
+  <color name="neutral_80">#333333</color>
+
+  <color name="primary_blue_10">#F8FBFF</color>
+  <color name="primary_blue_20">#E6F4FF</color>
+  <color name="primary_blue_30">#AAC9E1</color>
+  <color name="primary_blue_40">#80AED2</color>
+  <color name="primary_blue_50">#4898D3</color>
+  <color name="primary_blue_60">#2A78B5</color>
+  <color name="primary_blue_70">@color/primary_blue</color>
+  <color name="primary_blue_80">#004D8A</color>
+  <color name="primary_blue_90">#003E6F</color>
+  <color name="primary_blue_100">#002E53</color>
+  <color name="primary_blue_110">#001F37</color>
+  <color name="primary_blue_120">#001321</color>
+
+  <color name="primary_red">#D00B0B</color> <!-- red gym -->
+  <color name="primary_yellow">#FFD300</color> <!-- yellow electric -->
+  <color name="primary_blue">#005DA6</color> <!-- blue royal -->
+
+  <color name="amityMessageBubble">#1054DE</color>
+  <color name="amityMessageBubbleInverse">#EBECEF</color>
+</resources>

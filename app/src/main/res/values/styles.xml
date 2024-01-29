@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <style name="Text_Priority">
+    <item name="android:textSize">@dimen/text_20</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <style name="Text_Medium">
+    <item name="android:textSize">@dimen/text_15</item>
+  </style>
+
+  <style name="CustomToolbarStyle">
+    <item name="android:tint">@color/primary_red</item>
+  </style>
+
+  <style name="BasketCountText">
+    <item name="android:includeFontPadding">false</item>
+    <item name="android:padding">1dp</item>
+    <item name="android:textSize">@dimen/text_10</item>
+  </style>
+
+  <style name="BasketCountAppearance" parent="BasketCountText">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">0dp</item>
+    <item name="android:background">@drawable/bg_badge_message</item>
+    <item name="android:gravity">center</item>
+    <item name="layout_constraintDimensionRatio">1:1</item>
+  </style>
+
+  <style name="CircleImageView">
+    <item name="cornerFamily">rounded</item>
+    <item name="cornerSize">50%</item>
+  </style>
+</resources>

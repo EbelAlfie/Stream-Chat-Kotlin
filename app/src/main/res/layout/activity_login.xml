@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/spacing_12"
+    >
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/til_username"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/spacing_12"
+      app:layout_constraintVertical_chainStyle="packed"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintBottom_toTopOf="@id/til_password"
+      >
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/tie_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/login.user_name.hint"
+        />
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/til_password"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/spacing_12"
+      app:passwordToggleEnabled="true"
+      app:layout_constraintTop_toBottomOf="@id/til_username"
+      app:layout_constraintBottom_toTopOf="@id/btn_submit"
+      >
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/tie_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="@string/login.password.hint"
+        />
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <Button
+      android:id="@+id/btn_submit"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/spacing_12"
+      android:text="@string/button.submit"
+      app:layout_constraintTop_toBottomOf="@id/til_password"
+      app:layout_constraintBottom_toBottomOf="parent"
+      />
+</androidx.constraintlayout.widget.ConstraintLayout>
