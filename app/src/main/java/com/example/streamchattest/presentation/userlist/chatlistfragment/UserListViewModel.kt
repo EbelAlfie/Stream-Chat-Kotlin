@@ -50,7 +50,7 @@ class UserListViewModel @Inject constructor(
     userInfo?.let {
       ChatClient.instance().createChannel(
         channelType = "messaging",
-        channelId = recipient.id,
+        channelId = "",
         memberIds = listOf(recipient.id, it.password),
         extraData = mapOf()
       ).enqueue {

@@ -28,7 +28,7 @@ class LoginViewModel @Inject constructor(
   fun loginUser(userModel: UserModel) {
     client.connectUser(
       user = constructUser(userModel),
-      token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoibmVtYXRvZGEifQ.rei8TpTzHlA-Qsm1l3DVEe_pQiE-8qzhkAhH-QEf3EI",
+      token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiSzQ0NiJ9.6arUiFrXQyhZxJr1YuQ8lBG3A4Bz_jls3xC9su5gE1U",
     )
       .enqueue { result ->
         loginResult.postValue(result)

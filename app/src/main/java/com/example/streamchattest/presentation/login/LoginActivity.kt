@@ -7,6 +7,8 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.example.streamchattest.databinding.ActivityLoginBinding
 import com.example.streamchattest.presentation.login.model.LoginModel
+import com.example.streamchattest.presentation.login.model.Priviledge.Admin
+import com.example.streamchattest.presentation.login.model.UserModel
 import com.example.streamchattest.presentation.userlist.ChatListActivity
 import dagger.hilt.android.AndroidEntryPoint
 import io.getstream.chat.android.client.ChatClient
@@ -59,11 +61,7 @@ class LoginActivity: AppCompatActivity() {
     binding.run {
       val name = tieUsername.text.toString()
       val pass = tiePassword.text.toString()
-      if (name.isBlank()) return
-      if (pass.isBlank()) return
-      viewModel.validateLogin(LoginModel(name, pass)).let {
-        if (it != null) viewModel.loginUser(it)
-      }
+      viewModel.loginUser(UserModel(Admin, "Cokikil", "K446", token = ""))
     }
   }
 
